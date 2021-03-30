@@ -18,8 +18,10 @@ export default function Nav({ title = 'Home' }) {
           <Link href="/">
             <a className="font-bold text-3xl">{title}</a>
           </Link>
-          <ButtonLink href="/new">New Entry</ButtonLink>
-          {button}
+          <div className="flex justify-end">
+            <ButtonLink href="/new">New Entry</ButtonLink>
+            {button}
+          </div>
         </div>
       </nav>
     </Container>
