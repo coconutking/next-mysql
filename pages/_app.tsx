@@ -1,10 +1,13 @@
 import '../styles/index.css'
+import { Provider } from 'next-auth/client'
 import Footer from '@/components/footer'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <Provider session={pageProps.session}>
+        <Component {...pageProps} />
+      </Provider>
       <Footer />
     </>
   )
