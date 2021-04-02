@@ -7,9 +7,9 @@ export default function Nav({ title = 'Home' }) {
   const [session, loading] = useSession();
   var button;
   if (session) {
-    button = <button className="btn btn-secondary" onClick={signOut}>Logout</button>;
+    button = <button className="p-2 font-semibold" onClick={signOut}>Logout</button>;
   } else {
-    button = <button className="btn btn-primary" onClick={signIn}>Login</button>;
+    button = <button className="p-2 font-semibold" onClick={signIn}>Login</button>;
   }
   return (
     <Container className="py-4">

@@ -6,11 +6,9 @@ function Unauthorized() {
         <div className="row">
             <div className="col-lg-10 col-offset-1">
 
-                <p>Hey There, looks like you reached an area you don't have access to.</p>
+               <h1>Account Required. Please sign in here.</h1>
 
-               <p> Please sign in here.</p>
-
-               <p> <button className="btn btn-secondary" onClick={signIn}>Sign in</button></p>
+               <p> <button className="font-bold text-white rounded-md p-2 bg-black" onClick={signIn}>Sign in</button></p>
             </div>
         </div>
     )

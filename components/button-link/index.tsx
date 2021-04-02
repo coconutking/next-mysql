@@ -6,7 +6,7 @@ function ButtonLink({ href = '/', className = '', children }) {
     <Link href={href}>
       <a
         className={cn(
-          'bg-black',
+          'bg-green-400',
           'text-white',
           'p-2',
           'rounded',
